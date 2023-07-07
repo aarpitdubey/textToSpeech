@@ -102,6 +102,28 @@
 				transform: rotate(360deg);
 			}
 		}
+		textarea::-webkit-input-placeholder {
+            color: rgb(255, 8, 0);
+        }
+         
+        /* Firefox 18- */
+        textarea:-moz-placeholder {
+            color: rgb(255, 34, 0);
+        }
+         
+        /* Firefox 19+ */
+        textarea::-moz-placeholder {
+            color: #0bf;
+        }
+     
+        textarea:-ms-input-placeholder {
+            color: #0bf;
+        }
+     
+        textarea::placeholder {
+            color: rgb(128, 0, 0);
+        }
+
 		.footer{position:absolute;bottom:0px;width:100%;}
 		#datafetch_form{padding:0px 40px;}
 		.json-result audio{margin-top: 17%;}
@@ -125,7 +147,7 @@
 				<div class="col-md-6 col-xs-12">
 					<form method="post" id="datafetch_form" enctype="multipart/form-data">
 						<div class="form-group files color">
-							<textarea class="form-control" rows="8" id="comment"></textarea>
+							<textarea class="form-control" rows="8" id="comment" placeholder="Namaste Github Waasiyo! Yeh Project Jo Lekh se Dwaani banataa hai usko banaane vaale, Maha purush kaa naam hai Shri Shri ek sou Aath baar Prabhu Arpit Dubey Ji, Aap sabhi kaa bhot bhot Dhanyawaad"></textarea>
 						</div>
 						<div class=""><button class="form-control btn-primary mb-5" id="fetch">Convert to mp3 file</button></div>
 					</form>
