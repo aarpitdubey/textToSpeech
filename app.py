@@ -23,7 +23,7 @@ def predictRoute():
         result = textToSpeech.textToSpeech(data)
         return {"data" : result.decode("utf-8")}
     except Exception:
-        data = "you have enter an empty text.. Please enter some text, thankyou! Aap ne ek khaali vaakya diya hai Kripyaa kar ke kuch Vakyaa dijiye Dhanyaawaad"
+        data = "you have enter an invalid text.. Please enter some valid text, thankyou! Aap ne ek aamaanyaa vaakya diya hai Kripyaa kar ke Maanya Vakyaa dijiye... Dhanyaawaad"
         result = textToSpeech.textToSpeech(data)
         return {"data" : result.decode("utf-8")}
 
